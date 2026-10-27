@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmonette — A arte de compreender a música</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="Harmonette início">
+        <span class="brand-mark">♫</span>
+        <span><strong>Harmonette</strong><small>A arte de compreender a música</small></span>
+      </a>
+      <div class="profile-mini">
+        <div class="avatar">H</div>
+        <div><strong>Olá, professor!</strong><small>Área do professor</small></div>
+      </div>
+      <nav class="nav">
+        <button class="nav-item active" data-view="inicio"><span>⌂</span> Visão geral</button>
+        <button class="nav-item" data-view="aulas"><span>▤</span> Minhas aulas</button>
+        <button class="nav-item" data-view="alunos"><span>♙</span> Alunos</button>
+        <button class="nav-item" data-view="atividades"><span>✓</span> Atividades</button>
+        <button class="nav-item" data-view="materiais"><span>♫</span> Materiais musicais</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="tip-card"><span>✦</span><strong>Um passo de cada vez</strong><p>A teoria ganha vida quando você pratica.</p></div>
+        <small class="version">Prévia visual · 0.1</small>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="breadcrumb">Harmonette <span>/</span> <strong id="breadcrumb-current">Visão geral</strong></div>
+        <div class="top-actions"><span class="status-dot"></span><span>Modo de demonstração</span><button class="avatar small">H</button></div>
+      </header>
+
+      <section class="view active" id="view-inicio">
+        <div class="welcome-row">
+          <div><p class="eyebrow">TERÇA-FEIRA, 27 DE OUTUBRO</p><h1>Bom dia, professor! <span>♪</span></h1><p class="muted">Seu espaço para ensinar, aprender e compreender a música.</p></div>
+          <button class="primary-button" data-view="aulas">＋ Criar aula</button>
+        </div>
+        <div class="hero">
+          <div class="hero-copy"><span class="pill light">SUA JORNADA MUSICAL</span><h2>A música vai além das notas.</h2><p>Organize suas aulas, acompanhe seus alunos e transforme teoria musical em prática.</p><button class="hero-button" data-view="aulas">Explorar minhas aulas <span>→</span></button></div>
+          <div class="music-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="note note-one">♪</div><div class="note note-two">♫</div><div class="staff"><i></i><i></i><i></i><i></i><i></i></div><div class="big-clef">𝄞</div></div>
+        </div>
+        <div class="section-heading"><div><h2>Resumo do seu espaço</h2><p class="muted">Uma visão rápida da sua organização.</p></div><span class="subtle-label">DADOS DE EXEMPLO</span></div>
+        <div class="stats-grid">
+          <article class="stat-card"><div class="stat-icon blue">▤</div><span class="stat-label">Aulas criadas</span><strong>08</strong><small>Conteúdos organizados</small></article>
+          <article class="stat-card"><div class="stat-icon violet">♙</div><span class="stat-label">Alunos</span><strong>24</strong><small>Em acompanhamento</small></article>
+          <article class="stat-card"><div class="stat-icon teal">✓</div><span class="stat-label">Atividades entregues</span><strong>18</strong><small>De 26 atividades</small></article>
+          <article class="stat-card"><div class="stat-icon gold">♫</div><span class="stat-label">Materiais</span><strong>12</strong><small>PDFs, links e exercícios</small></article>
+        </div>
+        <div class="lower-grid">
+          <section class="panel"><div class="panel-heading"><div><h3>Aulas recentes</h3><p class="muted">Continue de onde parou.</p></div><button class="text-button" data-view="aulas">Ver todas →</button></div>
+            <div class="lesson-list">
+              <div class="lesson-row"><div class="lesson-symbol blue-bg">♬</div><div class="lesson-info"><strong>Introdução à harmonia</strong><small>Fundamentos · 4 atividades</small></div><span class="tag in-progress">Em andamento</span></div>
+              <div class="lesson-row"><div class="lesson-symbol purple-bg">𝄞</div><div class="lesson-info"><strong>Graus da escala</strong><small>Harmonia · 3 atividades</small></div><span class="tag published">Publicada</span></div>
+              <div class="lesson-row"><div class="lesson-symbol teal-bg">♫</div><div class="lesson-info"><strong>Intervalos musicais</strong><small>Percepção · 2 atividades</small></div><span class="tag draft">Rascunho</span></div>
+            </div>
+          </section>
+          <section class="panel calendar-panel"><div class="panel-heading"><div><h3>Plano da semana</h3><p class="muted">Pequenos passos, bons resultados.</p></div><span class="calendar-icon">▦</span></div>
+            <div class="week-item"><span class="day-badge">28<br><small>OUT</small></span><div><strong>Revisar graus harmônicos</strong><small>Preparação de aula</small></div></div>
+            <div class="week-item"><span class="day-badge">30<br><small>OUT</small></span><div><strong>Corrigir atividades</strong><small>Turma de harmonia</small></div></div>
+            <div class="week-item"><span class="day-badge">02<br><small>NOV</small></span><div><strong>Publicar novo conteúdo</strong><small>Próxima unidade</small></div></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="view" id="view-aulas">
+        <div class="page-heading"><div><p class="eyebrow">ENSINO ORGANIZADO</p><h1>Minhas aulas</h1><p class="muted">Organize conteúdos, atividades comuns e tarefas individuais.</p></div><button class="primary-button" id="new-lesson">＋ Nova aula</button></div>
+        <div class="toolbar"><div class="search-box"><span>⌕</span><input id="lesson-search" type="search" placeholder="Buscar uma aula..."></div><span class="subtle-label" id="lesson-count">3 aulas de demonstração</span></div>
+        <div class="lesson-cards" id="lesson-cards">
+          <article class="lesson-card"><div class="lesson-cover cover-blue"><span>HARMONIA I</span><b>♫</b><i>♪</i></div><div class="lesson-card-body"><span class="tag published">Publicada</span><h3>Introdução à harmonia</h3><p>Conceitos básicos, consonância e organização dos acordes.</p><div class="card-meta"><span>▤ 4 atividades</span><span>♙ 24 alunos</span></div><button class="outline-button lesson-open" data-title="Introdução à harmonia">Abrir aula →</button></div></article>
+          <article class="lesson-card"><div class="lesson-cover cover-purple"><span>ESCALAS</span><b>𝄞</b><i>♬</i></div><div class="lesson-card-body"><span class="tag published">Publicada</span><h3>Graus da escala</h3><p>Identifique os graus e compreenda sua função na tonalidade.</p><div class="card-meta"><span>▤ 3 atividades</span><span>♙ 24 alunos</span></div><button class="outline-button lesson-open" data-title="Graus da escala">Abrir aula →</button></div></article>
+          <article class="lesson-card"><div class="lesson-cover cover-teal"><span>PERCEPÇÃO</span><b>♫</b><i>♪</i></div><div class="lesson-card-body"><span class="tag draft">Rascunho</span><h3>Intervalos musicais</h3><p>Distâncias entre notas com exemplos para praticar a escuta.</p><div class="card-meta"><span>▤ 2 atividades</span><span>♙ 0 alunos</span></div><button class="outline-button lesson-open" data-title="Intervalos musicais">Abrir aula →</button></div></article>
+        </div>
+      </section>
+
+      <section class="view" id="view-alunos">
+        <div class="page-heading"><div><p class="eyebrow">ACOMPANHAMENTO</p><h1>Alunos</h1><p class="muted">Veja uma prévia de como a turma poderá ser organizada.</p></div><button class="primary-button" id="add-student">＋ Adicionar aluno</button></div>
+        <div class="panel table-panel"><div class="panel-heading"><div><h3>Turma de harmonia</h3><p class="muted">Lista ilustrativa de alunos</p></div><div class="search-box compact"><span>⌕</span><input id="student-search" placeholder="Buscar aluno..."></div></div>
+          <div class="student-list" id="student-list">
+            <div class="student-row" data-name="ana clara"><div class="student-avatar a1">AC</div><div class="student-info"><strong>Ana Clara</strong><small>@anaclara · Harmonia I</small></div><span class="progress-wrap"><span class="progress-track"><i style="width:82%"></i></span><small>82%</small></span><span class="tag published">Ativa</span></div>
+            <div class="student-row" data-name="miguel santos"><div class="student-avatar a2">MS</div><div class="student-info"><strong>Miguel Santos</strong><small>@miguels · Harmonia I</small></div><span class="progress-wrap"><span class="progress-track"><i style="width:65%"></i></span><small>65%</small></span><span class="tag published">Ativo</span></div>
+            <div class="student-row" data-name="isabela costa"><div class="student-avatar a3">IC</div><div class="student-info"><strong>Isabela Costa</strong><small>@isabelac · Harmonia I</small></div><span class="progress-wrap"><span class="progress-track"><i style="width:94%"></i></span><small>94%</small></span><span class="tag published">Ativa</span></div>
+            <div class="student-row" data-name="pedro henrique"><div class="student-avatar a4">PH</div><div class="student-info"><strong>Pedro Henrique</strong><small>@pedroh · Harmonia I</small></div><span class="progress-wrap"><span class="progress-track"><i style="width:41%"></i></span><small>41%</small></span><span class="tag in-progress">Em progresso</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="view-atividades">
+        <div class="page-heading"><div><p class="eyebrow">PRÁTICA MUSICAL</p><h1>Atividades</h1><p class="muted">Acompanhe entregas e correções em um só lugar.</p></div><button class="primary-button" id="new-activity">＋ Nova atividade</button></div>
+        <div class="stats-grid activity-stats"><article class="stat-card"><span class="stat-label">Pendentes de correção</span><strong>08</strong><small>Precisam da sua atenção</small></article><article class="stat-card"><span class="stat-label">Entregues</span><strong>18</strong><small>Enviadas pelos alunos</small></article><article class="stat-card"><span class="stat-label">Corrigidas</span><strong>12</strong><small>Com nota do professor</small></article></div>
+        <div class="panel"><div class="panel-heading"><div><h3>Atividades recentes</h3><p class="muted">Exemplos de tipos de atividade.</p></div></div><div class="activity-row"><div class="activity-icon blue-bg">PDF</div><div class="activity-info"><strong>Exercício escrito — graus da escala</strong><small>Envio de PDF respondido · Graus da escala</small></div><span class="tag in-progress">A corrigir</span></div><div class="activity-row"><div class="activity-icon purple-bg">♫</div><div class="activity-info"><strong>Quiz — identificação de notas</strong><small>Correção automática demonstrativa · 10 questões</small></div><span class="tag published">Concluído</span></div><div class="activity-row"><div class="activity-icon teal-bg">♪</div><div class="activity-info"><strong>Atividade individual — Ana Clara</strong><small>Tarefa específica para uma aluna</small></div><span class="tag draft">Em aberto</span></div></div>
+      </section>
+
+      <section class="view" id="view-materiais">
+        <div class="page-heading"><div><p class="eyebrow">BIBLIOTECA MUSICAL</p><h1>Materiais musicais</h1><p class="muted">Um espaço para partituras, PDFs, vídeos e ferramentas de estudo.</p></div><button class="primary-button" id="add-material">＋ Adicionar material</button></div>
+        <div class="material-grid"><article class="material-card"><div class="material-symbol blue-bg">♬</div><div><span class="material-type">GUIA DE ESTUDO</span><h3>Fundamentos da harmonia</h3><p>Resumo de conceitos e termos essenciais.</p><span class="tag draft">Exemplo de material</span></div></article><article class="material-card"><div class="material-symbol purple-bg">𝄞</div><div><span class="material-type">PARTITURA</span><h3>Leitura musical básica</h3><p>Material de apoio para leitura de notas.</p><span class="tag draft">Exemplo de material</span></div></article><article class="material-card"><div class="material-symbol teal-bg">▶</div><div><span class="material-type">VÍDEO / LINK</span><h3>Escuta e percepção</h3><p>Referências externas para praticar.</p><span class="tag draft">Exemplo de material</span></div></article></div>
+      </section>
+      <footer class="footer"><span>♫ Harmonette</span><span>Prévia visual para desenvolvimento local</span></footer>
+    </main>
+  </div>
+
+  <dialog id="lesson-dialog" class="modal"><form id="lesson-form"><button type="button" class="modal-close" id="close-modal" aria-label="Fechar">×</button><p class="eyebrow">NOVA AULA</p><h2>Organize um novo conteúdo</h2><label for="lesson-title">Título da aula</label><input id="lesson-title" required maxlength="80" placeholder="Ex.: Funções harmônicas"><label for="lesson-description">Descrição</label><textarea id="lesson-description" rows="3" placeholder="O que os alunos vão aprender?"></textarea><label for="lesson-topic">Área musical</label><select id="lesson-topic"><option>Harmonia</option><option>Percepção musical</option><option>Teoria musical</option><option>Leitura de partitura</option></select><button class="primary-button full" type="submit">Criar aula de demonstração</button><p class="modal-note">A aula ficará salva neste navegador para a prévia.</p></form></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
