@@ -1,0 +1,55 @@
+{
+  "projeto": "Harmonette",
+  "versao": "0.1",
+  "descricao": "Dados de exemplo para a prévia visual local.",
+  "observacao": "Este arquivo JSON é apenas demonstrativo. O navegador não grava automaticamente nele.",
+  "aulas": [
+    {
+      "id": "aula-001",
+      "titulo": "Introdução à harmonia",
+      "area": "Harmonia",
+      "status": "publicada",
+      "atividades": 4
+    },
+    {
+      "id": "aula-002",
+      "titulo": "Graus da escala",
+      "area": "Teoria musical",
+      "status": "publicada",
+      "atividades": 3
+    },
+    {
+      "id": "aula-003",
+      "titulo": "Intervalos musicais",
+      "area": "Percepção musical",
+      "status": "rascunho",
+      "atividades": 2
+    }
+  ],
+  "alunos": [
+    {
+      "id": "aluno-001",
+      "nome": "Ana Clara",
+      "usuario": "@anaclara",
+      "progresso": 82
+    },
+    {
+      "id": "aluno-002",
+      "nome": "Miguel Santos",
+      "usuario": "@miguels",
+      "progresso": 65
+    },
+    {
+      "id": "aluno-003",
+      "nome": "Isabela Costa",
+      "usuario": "@isabelac",
+      "progresso": 94
+    },
+    {
+      "id": "aluno-004",
+      "nome": "Pedro Henrique",
+      "usuario": "@pedroh",
+      "progresso": 41
+    }
+  ]
+}
